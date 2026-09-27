@@ -1,0 +1,5 @@
+Options -Indexes
+<FilesMatch "^(\.env|composer\.(json|lock)|spark|README\.md|.*\.sql)$">
+    Require all denied
+</FilesMatch>
+RedirectMatch 403 ^/tasks-for-today/(app|database|tests|vendor|writable|system|preload\.php)(/|$)
